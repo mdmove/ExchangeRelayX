@@ -1,10 +1,14 @@
 # ExchangeRelayX
-Version 1.0.0. This tool is a PoC to demonstrate the ability of an attacker to perform an SMB or HTTP based NTLM relay attack to the EWS endpoint on an on-premise Microsoft Exchange server to compromise the mailbox of the victim. This tool provides the attacker with an OWA looking interface, with access to the user's mailbox and contacts.
+Version 1.0.1. This tool is a PoC to demonstrate the ability of an attacker to perform an SMB or HTTP based NTLM relay attack to the EWS endpoint on an on-premise Microsoft Exchange server to compromise the mailbox of the victim. This tool provides the attacker with an OWA looking interface, with access to the user's mailbox and contacts.
 
 # Background
 Released at Defcon26. View the background on the tool, the core issues being exploited, and a recorded demo here: https://blog.quickbreach.io/one-click-to-owa/
 
 # Installation
+	python -m pip install virtualenv
+	python -m virtualenv py2
+	source py2/bin/activate
+	
 	pip install -r requirements.txt
 
 # Usage
